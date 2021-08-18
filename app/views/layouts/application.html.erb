@@ -10,13 +10,15 @@
   </head>
 
   <body>
-    
+
     <% if flash[:notice] %>
-     <p id="notice">
+     <div class="notice">
+       <p>
        <%= flash[:notice] %>
-     </p>
+       </p>
+     </div>
     <% end %>
-   
+
     <%= yield %>
   </body>
 </html>
